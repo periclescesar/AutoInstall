@@ -1,0 +1,20 @@
+$ cat .gitignore
+
+# Ignorar arquivos específicos
+
+*/.gitignore
+composer.lock
+
+# Use curingas como
+# ex.1: *~
+# ex.2: *.swp
+
+*.swp
+*.log
+*~
+*.bak
+
+# Ignorar todos os diretórios e arquivos em um diretório.
+# ex.: tmp/**/* 
+.idea/*
+*/nbproject/*
