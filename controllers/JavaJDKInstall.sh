@@ -1,9 +1,9 @@
 # Java JDK Install
 sudo apt-get update;
 echo "\n\n\tInstalando o Java...";
-sudo apt-get install openjdk-7-jdk;
+sudo apt-get -y install openjdk-7-jdk;
 echo "\n\n\tInstalando a Documentação do Java...";
-sudo apt-get install openjdk-7-doc;
+sudo apt-get -y install openjdk-7-doc;
 
 
 # mensagens finais
