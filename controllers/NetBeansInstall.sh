@@ -20,11 +20,12 @@ sh netbeans8.0.2.sh;
 #checando instalação
 isInstall=$(sudo dpkg -l | grep -c "netbeans");
 if [ $isInstall -ge 1 ]; then
-echo "\n\n\tInstalação finalizada com sucesso!\n\n";
-notify-send -u normal -i /tmp/netbeans.png 'NetBeans 8.0' 'Instalação finalizada com sucesso!'
+	echo "\n\n\tInstalação finalizada com sucesso!\n\n";
+	notify-send -u normal -i /tmp/netbeans.png 'NetBeans 8.0' 'Instalação finalizada com sucesso!'
+	rm netbeans8.0.2.sh;
 else
-echo "\n\n\tErro na Instalação!\n\n";
-notify-send -u normal -i /tmp/netbeans.png 'NetBeans 8.0' 'Erro na Instalação!'
+	echo "\n\n\tErro na Instalação!\n\n";
+	notify-send -u normal -i /tmp/netbeans.png 'NetBeans 8.0' 'Erro na Instalação!'
 fi
 
 # Limpando Cache
