@@ -17,4 +17,5 @@ composer.lock
 # Ignorar todos os diretórios e arquivos em um diretório.
 # ex.: tmp/**/* 
 .idea/*
-*/nbproject/*
+nbproject/*
+
