@@ -1,7 +1,7 @@
 # Apache2 Install
 sudo apt-get update;
 echo "\n\n\tInstalando o Apache2...";
-sudo apt-get install apache2;
+sudo apt-get -y install apache2;
 
 # mensagens finais
 cd /tmp
@@ -9,8 +9,8 @@ wget -O apache.png http://ubuntuserverguide.com/wp-content/uploads/2012/10/apach
 
 configAmbi() {
 
-
-	notify-send -u normal -i /tmp/mysql.png 'Apache2' 'Ambiente configurado!'
+	xdg-open http://localhost/index.html
+	notify-send -u normal -i /tmp/mysql.png 'Apache2' 'Ambiente configurado!'	
 }
 
 isInstall=$(sudo dpkg -l | grep -c "apache2");
