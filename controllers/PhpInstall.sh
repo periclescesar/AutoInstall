@@ -2,7 +2,7 @@
 echo "\n\n\tAdicionando PPA...";
 sudo add-apt-repository -y ppa:ondrej/php5-5.6;
 
-echo "\n\n\tAdicionando Atualizando lista...";
+echo "\n\n\tAtualizando lista...";
 sudo apt-get update;
 
 echo "\n\n\tInstalando Dependências...";
