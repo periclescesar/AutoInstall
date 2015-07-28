@@ -1,0 +1,54 @@
+Devel
+	web
+		Servidor
+			Apache
+			MySQL
+		Linguagens
+			PHP
+			LAMP
+		Ferramentas
+			Composer
+			PHPUnitInstall.sh
+			FilezillaInstall.sh
+	Desktop
+		GoogleTestInstall.sh
+		JavaJDKInstall.sh
+	IDEs
+		EclipseInstall.sh
+		NetBeansInstall.sh
+	Ferramentas
+		GitInstall.sh
+		VimInstall.sh
+	
+	
+Ferramentas de Sistema
+	BootRepairInstall.sh
+	DockyInstall.sh
+	GrubCustomizerInstall.sh
+	HardInfoInstall.sh
+	PsensorInstall.sh
+	SynapticInstall.sh
+	UnityTweakToolInstall.sh
+	VirtualBoxInstall.sh
+	WineInstall.sh
+	
+Navegadores
+	ChoromeInstall.sh
+
+Media
+	ClementineInstall.sh 
+	KodiInstall.sh
+	PopcorntimeInstall.sh
+
+Editores
+	InkscapeInstall.sh
+	LibreOfficeInstall.sh
+
+Games
+	SteamInstall.sh
+
+
+
+
+
+

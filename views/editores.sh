@@ -1,5 +1,5 @@
 ##
-#DevelWebView
+#EditoresView
 #
 # @todo Mudar os exits dos submenus para saida direta e colcar uma opção para voltar.
 ##
@@ -14,19 +14,10 @@ showOptions() {
 	echo "==========================================================";
 	echo "\tSelecione o item do memu desejado:";
 	
-	echo $orage;
-	echo "\t-1 - Servidores {vazio}";
-	echo "\t-2 - Linguagens {vazio}";
-	echo "\t-3 - Ferramentas {vazio}";
-	
 	echo $green;
-	echo "\t1 - Apache 2: Servidor HTTP";
-	echo "\t2 - MySQL 5.6: Sistema de Gerenciamento Banco de Dados";
-	echo "\t3 - PHP 5: Interpretador do PHP";
-	echo "\t4 - LAMP: Pacote de Desenvolvimento WEB (Linux, Apache, MySQL e PHP)";
-	echo "\t5 - Composer: Gerência de dependências para PHP";
-	echo "\t6 - PHPUnit: Teste Unitário para PHP";
-	echo "\t7 - FileZilla: Programa para transferências via FTP/SFTP";
+	echo "\t1 - Inkscape: software livre para editoração eletrônica de imagens e documentos vetoriais";
+	echo "\t2 - LibreOfice: suíte de aplicativos livre para escritório";
+	
 		
 	echo $reset;
 
@@ -44,7 +35,7 @@ validarOpcao() {
 	
 	# verificar se foi digitada uma opãoo válida,
 	# numérica de 0 a 4;
-	if [ -z $opcao ] || [ 0 -gt $opcao ] || [ $opcao -gt 7 ]; then
+	if [ -z $opcao ] || [ 0 -gt $opcao ] || [ $opcao -gt 2 ]; then
 		echo "ERRO: digite uma opção válida!"
 	fi
 }
@@ -58,20 +49,10 @@ chooseAction() {
 		    exit;;
 		    
 		1)
-			./controllers/ApacheInstall.sh;;
+			./controllers/InkscapeInstall.sh;;
 		2)
-			./controllers/MysqlInstall.sh;;
-		3)
-			./controllers/PhpInstall.sh;;
-		4)
-			./controllers/PackLAMPInstall.sh;;
-		5)
-			./controllers/ComposerInstall.sh;;
-		6)
-			./controllers/PHPUnitInstall.sh;;
-		7)
-			./controllers/FilezillaInstall.sh;;
-		
+			./controllers/LibreOfficeInstall.sh;;
+				
 	esac;
 }
 

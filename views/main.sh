@@ -16,6 +16,12 @@ showOptions() {
 	
 	echo $orage;
 	echo "\t1 - Desenvolvimento";
+	echo "\t2 - Editores";
+	echo "\t3 - Ferramentas de Sistema";
+	echo "\t4 - Games";
+	echo "\t5 - Media";
+	echo "\t6 - Navegadores";
+			
 	echo $reset;
 	
 	echo "\t0 - Sair";
@@ -32,7 +38,7 @@ validarOpcao() {
 	
 	# verificar se foi digitada uma opãoo válida,
 	# numérica de 0 a 4;
-	if [ -z $opcao ] || [ 0 -gt $opcao ] || [ $opcao -gt 1 ]; then
+	if [ -z $opcao ] || [ 0 -gt $opcao ] || [ $opcao -gt 6 ]; then
 		echo "ERRO: digite uma opção válida!"
 	fi
 }
@@ -45,8 +51,17 @@ chooseAction() {
 	    	echo "Saindo..."
     	    exit;;
 		1)
-			./views/devel.sh
-		
+			./views/devel.sh;;	
+		2)
+			./views/editores.sh;;
+		3)
+			./views/ferramentasSys.sh;;
+		4)
+			./views/games.sh;;	
+		5)
+			./views/media.sh;;
+		6)
+			./views/navegadores.sh;;
 	esac;
 }
 

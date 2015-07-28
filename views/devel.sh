@@ -16,9 +16,9 @@ showOptions() {
 	
 	echo $orage;
 	echo "\t1 - Desenvolvimento Web";
-	echo "\t2 - Desenvolvimento Desktop [Não feito]";
-	echo "\t3 - IDEs [Não feito]";
-	echo "\t4 - Ferramentas [Não feito]";
+	echo "\t2 - Desenvolvimento Desktop";
+	echo "\t3 - IDEs";
+	echo "\t4 - Ferramentas";
 	echo $reset;
 	
 	echo "\t0 - Sair";
@@ -48,7 +48,13 @@ chooseAction() {
 			echo "Saindo...";
 		    exit;;
 		1)
-			./views/develWeb.sh;
+			./views/develWeb.sh;;
+		2)
+			./views/develDesk.sh;;
+		3)
+			./views/ides.sh;;
+		4)
+			./views/devFerramentas.sh;;
 	esac;
 }
 
