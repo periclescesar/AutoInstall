@@ -16,7 +16,8 @@ showOptions() {
 	
 	echo $green;
 	echo "\t1 - GoogleTest: Teste Unitário para C++";
-	echo "\t2 - JavaJDK: Java Developer Kit";
+	echo "\t2 - JavaJDK7: Java Developer Kit";
+	echo "\t3 - JavaJDK8: Java Developer Kit";
 	
 	echo $reset;
 
@@ -34,7 +35,7 @@ validarOpcao() {
 	
 	# verificar se foi digitada uma opãoo válida,
 	# numérica de 0 a 4;
-	if [ -z $opcao ] || [ 0 -gt $opcao ] || [ $opcao -gt 2 ]; then
+	if [ -z $opcao ] || [ 0 -gt $opcao ] || [ $opcao -gt 3 ]; then
 		echo "ERRO: digite uma opção válida!"
 	fi
 }
@@ -51,6 +52,8 @@ chooseAction() {
 			./controllers/GoogleTestInstall.sh;;
 		2)
 			./controllers/JavaJDKInstall.sh;;
+		3)
+			./controllers/JavaJDK8Install.sh;;
 		
 	esac;
 }

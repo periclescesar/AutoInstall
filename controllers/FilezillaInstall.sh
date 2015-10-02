@@ -1,6 +1,6 @@
 # FileZilla Install
 sudo apt-get update;
-sudo apt-get y install filezilla;
+sudo apt-get -y install filezilla;
 
 # mensagens finais
 cd /tmp

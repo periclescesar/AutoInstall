@@ -13,6 +13,7 @@ composer.lock
 *.log
 *~
 *.bak
+*sublime-*
 
 # Ignorar todos os diretórios e arquivos em um diretório.
 # ex.: tmp/**/* 
