@@ -33,6 +33,7 @@ Ferramentas de Sistema
 	UnityTweakToolInstall.sh
 	VirtualBoxInstall.sh
 	WineInstall.sh
+	OhMyZshInstall.sh
 	
 Navegadores
 	ChoromeInstall.sh

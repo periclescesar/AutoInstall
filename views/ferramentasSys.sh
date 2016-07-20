@@ -24,6 +24,7 @@ showOptions() {
 	echo "\t7 - UnityTweakTool";
 	echo "\t8 - VirtualBox";
 	echo "\t9 - Wine";
+	echo "\t10 - OhMyZsh";
 	
 	echo $reset;
 
@@ -41,7 +42,7 @@ validarOpcao() {
 	
 	# verificar se foi digitada uma opãoo válida,
 	# numérica de 0 a 4;
-	if [ -z $opcao ] || [ 0 -gt $opcao ] || [ $opcao -gt 9 ]; then
+	if [ -z $opcao ] || [ 0 -gt $opcao ] || [ $opcao -gt 10 ]; then
 		echo "ERRO: digite uma opção válida!"
 	fi
 }
@@ -71,7 +72,9 @@ chooseAction() {
 		8)
 			./controllers/VirtualBoxInstall.sh;;
 		9)
-			./controllers/WineInstall.sh;;		
+			./controllers/WineInstall.sh;;
+		10)
+			./controllers/OhMyZshInstall.sh;;	
 	esac;
 }
 
