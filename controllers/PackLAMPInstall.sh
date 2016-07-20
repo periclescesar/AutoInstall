@@ -23,8 +23,7 @@ sudo chmod -R g+rwx /var/www/;
 sudo umasck 003 /var/www/;
 sudo chmod -R g+s /var/www/;
 
-
-sudo echo '<?php phpinfo();?>' >> /var/www/html/phpInfo.php
+sudo sh -c "echo '<?php phpinfo();?>' >> /var/www/html/phpInfo.php";
 
 xdg-open http://localhost/phpInfo.php
 
