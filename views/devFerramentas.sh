@@ -16,7 +16,9 @@ showOptions() {
 	
 	echo $green;
 	echo "\t1 - Git: Sistema de versionamento";
-	echo "\t2 - Vim: Editor de texto via cmd";
+	echo "\t2 - GitFlow: Extensão do git para organização dos branchs";
+	echo "\t3 - GitKraken: Ferramenta gráfica para gerenciamento do Git";
+	echo "\t4 - Vim: Editor de texto via cmd";
 	
 	echo $reset;
 
@@ -34,7 +36,7 @@ validarOpcao() {
 	
 	# verificar se foi digitada uma opãoo válida,
 	# numérica de 0 a 4;
-	if [ -z $opcao ] || [ 0 -gt $opcao ] || [ $opcao -gt 2 ]; then
+	if [ -z $opcao ] || [ 0 -gt $opcao ] || [ $opcao -gt 4 ]; then
 		echo "ERRO: digite uma opção válida!"
 	fi
 }
@@ -50,6 +52,10 @@ chooseAction() {
 		1)
 			./controllers/GitInstall.sh;;
 		2)
+			./controllers/GitFlowInstrall.sh;;
+		3)
+			./controllers/GitKrakenInstall.sh;;
+		4)
 			./controllers/VimInstall.sh;;
 		
 	esac;

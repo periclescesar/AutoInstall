@@ -18,6 +18,8 @@ Devel
 		NetBeansInstall.sh
 	Ferramentas
 		GitInstall.sh
+		GitFlowInstrall.sh
+		GitKrakenInstrall.sh
 		VimInstall.sh
 	
 	
